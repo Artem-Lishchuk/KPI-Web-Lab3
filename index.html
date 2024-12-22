@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Removed the external CSS link; all styles are now inline -->
+  <title>lishchuk artem lab 2</title>
+</head>
+<body>
+
+  <!-- table styles -->
+  <table 
+    style="
+      margin: 0;
+      width: 100%;
+      height: 100vh;
+      border-collapse: collapse;
+    "
+  >
+    <!-- Row 1: Container 1 spans the entire row -->
+    <tr>
+      <td 
+        colspan="4"
+        style="
+          border: 2px solid black;
+          text-align: center;
+          vertical-align: middle;
+
+          /* container1 */
+          background-color: #d6e4f0;
+          height: 21%;
+          padding: 20px;
+        "
+      >
+        <!-- .box inside container1 -->
+        <div
+          style="
+            position: relative;
+            top: 10%;
+            left: 10px;
+            width: 50%;
+            height: 35%;
+            line-height: 200%;
+            transform: translateY(0%);
+            background-color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+          "
+        >
+          Бережіть воду -
+        </div>
+
+        <!-- container-label for container1 -->
+        <span
+          style="
+            /* base container-label */
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+            
+            /* overrides for .container1 .container-label */
+            float: right;
+            right: 10px;
+            top: -10%;
+          "
+        >
+          1
+        </span>
+      </td>
+    </tr>
+    
+    <tr>
+      <!-- Container 2 -->
+      <td 
+        rowspan="2"
+        style="
+          border: 2px solid black;
+          text-align: center;
+          vertical-align: middle;
+
+          /* container2 */
+          background-color: #fae2d7;
+          width: 25%;
+          /* If '57%px' was a typo, change to '57%' */
+          height: 57%;
+          padding: 20px;
+        "
+      >
+        <!-- container-label for container2 -->
+        <span
+          style="
+            /* base container-label */
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+            top: 10px;
+            right: 10px;
+
+            /* overrides for .container2 .container-label */
+            float: left;
+          "
+        >
+          2
+        </span>
+      </td>
+
+      <!-- Container 3 -->
+      <td
+        style="
+          border: 2px solid black;
+          text-align: center;
+          vertical-align: middle;
+
+          /* container3 */
+          background-color: #ffffff;
+          height: 50%;
+          width: 50%;
+          padding: 20px;
+        "
+      >
+
+        <!-- container-label for container3 -->
+        <span
+          style="
+            /* base container-label */
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+
+            /* overrides for .container3 .container-label */
+            float: right;
+
+            /* .container3 span overrides */
+            top: -5%;
+            left: 10px;
+            transform: translateY(-50%);
+          "
+        >
+          3
+        </span>
+      </td>
+
+      <!-- Container 4 -->
+      <td 
+        rowspan="3"
+        style="
+          border: 2px solid black;
+          text-align: center;
+          vertical-align: middle;
+
+          /* container4 */
+          background-color: #fae2d7;
+          width: 25%;
+          height: 79%;
+          padding: 20px;
+        "
+      >
+        <!-- container-label for container4 -->
+        <span
+          style="
+            /* base container-label */
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+            top: 10px;
+            right: 10px;
+
+            /* .container4 .container-label */
+            float: right;
+          "
+        >
+          4
+        </span>
+      </td>
+    </tr>
+
+    <tr>
+      <!-- Container 5 -->
+      <td
+        style="
+          border: 2px solid black;
+          text-align: center;
+          vertical-align: middle;
+
+          /* container5 */
+          background-color: #d7f4d2;
+          height: 7%;
+          width: 50%;
+          /* No padding declared */
+        "
+      >
+        <!-- container-label for container5 -->
+        <span
+          style="
+            /* base container-label */
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+
+            /* overrides for .container5 .container-label */
+            top: 0%;
+            right: 0%;
+          "
+        >
+          5
+        </span>
+      </td>
+    </tr>
+
+    <tr>
+      <!-- Container 6 -->
+      <td
+        colspan="2"
+        style="
+          border: 2px solid black;
+          text-align: center;
+          vertical-align: middle;
+
+          /* container6 */
+          background-color: #cce0f0;
+          height: 22%;
+          width: 60%;
+          padding: 20px;
+        "
+      >
+        <!-- .box inside container6 -->
+        <div
+          style="
+            position: relative;
+            top: 10%;
+            left: 10px;
+            width: 50%;
+            height: 35%;
+            line-height: 200%;
+            transform: translateY(0%);
+            background-color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+          "
+        >
+          Пийте пиво!
+        </div>
+
+        <!-- container-label for container6 -->
+        <span
+          style="
+            /* base container-label */
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+
+            /* overrides for .container6 .container-label */
+            float: right;
+            right: 10px;
+            top: -10%;
+          "
+        >
+          6
+        </span>
+      </td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
